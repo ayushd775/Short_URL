@@ -48,8 +48,13 @@ async function handleGetAnalytics(req,res) {
         })
 }
 
+async function handleGetTest(req,res) {
+    return res.render('home');
+}
+
 module.exports= {
     handleGenerateNewShortURL,
     handleGetRedirect,
     handleGetAnalytics,
+    handleGetTest,
 }
